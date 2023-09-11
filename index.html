@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>HNG_Profile_Card</title>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="pic-card" data-test-="">
+                <div class="img-container">
+                    <img src="./assets/images/slack_displayName.jpg" alt="ahmad" height="300" data-testid="slackUserName">
+                </div>
+                <div class="">
+                    <span>ahmad</span>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="week-day">
+                    What's today: <span id="dayOfWeek"></span>
+                </div>
+                <div class="utc-milliseconds-time">
+                    UTC Time In Milleseconds: <span id="secondsUTC"></span>
+                </div>
+                <div>Track: Frontend</div>
+            </div>
+            <div class="footer-card">
+                <div class="code-descrption">The Github link to this profile card</div>
+                <div class="iconImage-container">
+                    <img src="./assets/images/github_icon.png" alt="code_link">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
