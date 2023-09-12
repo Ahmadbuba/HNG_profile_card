@@ -17,12 +17,12 @@
         </div>
 
         <div class="profile-info">
-            <img class="profile-pic" src="./assets/images/slack_displayName.jpg" alt="slack_profile_pic" height="60">
+            <img class="profile-pic" src="./assets/images/slack_displayName.jpg" alt="slack_display_image" height="60" data-testid="slackDisplayImage">
             <div class="flex-center">
                 
                     <span>Slack Username:</span>
                 
-                    <h2>ahmad</h2>
+                    <h2 data-testid="slackUserName">ahmad</h2>
                   
             </div>
         </div>
@@ -30,41 +30,45 @@
         <hr class="line">
 
         <div class="profile-info-body">
-
-            <div class="info">
+            <div class="info-body">
+                <div class="info">
                
                     <span>What's today</span>
                 
                 
-                    <h2 id="dayOfWeek"></h2>
+                    <h4 id="dayOfWeek" data-testid="currentDayOfTheWeek"></h4>
                 
-            </div>
+                </div>
 
-            <div class="info">
+                <div class="info">
                 
                     <span>Current Time(MilliSeconds UTC)</span>
                 
-                    <h2 id="secondsUTC"></h2>
+                    <h4 id="secondsUTC" data-testid="currentUTCTime"></h4>
                 
-            </div>
+                </div>
 
-            <div class="info">
+                <div class="info">
                 
                     <span>Track</span>
                 
-                    <h2>Frontend</h2>
+                    <h4 data-testid="myTrack">Frontend</h4>
                 
+                </div>
             </div>
-
-            <div class="flex-center link">
-                <span>Code Link:</span>
+            
+            <div class="info-footer">
+                <div class="flex-center link">
+                    <span>Code Link:</span>
+                </div>
+    
+                <div class="flex-center link">
+                    <a href="" target="_blank" data-testid=“githubURL”>
+                        <img src="./assets/images/github_icon.png" alt="immag">
+                    </a>
+                </div>
             </div>
-
-            <div class="flex-center link">
-                <a href="" target="_blank">
-                    <img src="./assets/images/github_icon.png" alt="immag">
-                </a>
-            </div>
+            
 
         </div>
 
