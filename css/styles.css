@@ -6,88 +6,88 @@
 
 body {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.card-container {
+h2 {
+    color: #E8E8E8;
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 0 0.4rem;
+}
+
+span {
+    padding: 0 0.2rem;
+    font-size: 12px;
+    color: #4CB493;
+	letter-spacing: 2px;
+}
+
+.container {
     /* Mobile */
-    margin: 3rem auto;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid red;
+    width: 100%;
+    background-color: #222222;
 
     /* Tablet */
     @media (min-width: 768px) {
         width: 60%;
-        height: 50%;
+        max-height: 50%;
     }
 
     /* Laptop */
     @media (min-width: 1024px) {
-        width: 40%;
-        height: 30%;
+        width: 50%;
+        max-height: 40%;
     }
 }
 
-
-.card {
+.profile-card {
     width: 100%;
 }
-.pic-card {
-    width: 100%;
-    /* border: 2px solid green; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    /* Tablet */
-    @media (min-width: 768px) {
-        width: 60%;
-    }
-
-    /* Laptop */
-    @media (min-width: 1024px) {
-        width: 40%;
-       
-    }
-}
-
-.img-container {
-   width: 100%;
-}
-.img-container img {
+.profile-card img {
     width: 100%;
     object-fit: cover;
 }
 
-.pic-card div span {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 3rem;
-}
-
-.info-card {
+.profile-info {
     width: 100%;
+    position: relative;
+    margin-top: 40px;
 }
 
-.font-1 {
-    
+.profile-pic {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 50%;
+    top: -70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    max-width: 120px;
 }
 
-
-/* .card {
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 100%;
+.flex-center {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
     align-items: center;
 }
 
 
+.link {
+    background-color: #E8E8E8;
+    border: 2px solid salmon;
+}
 
-.img-container img {
-    object-fit: contain;
-    border-radius: 50%;
-    padding: 0.5rem 0.75rem;
-} */
+.line {
+    line-height: 2px;
+    color: cornsilk;
+}

@@ -10,33 +10,66 @@
     <title>HNG_Profile_Card</title>
 </head>
 <body>
-    <div class="card-container">
-        <div class="card">
-            <div class="pic-card" data-test-="">
-                <div class="img-container">
-                    <img src="./assets/images/slack_displayName.jpg" alt="ahmad" height="300" data-testid="slackUserName">
-                </div>
-                <div class="">
-                    <span>ahmad</span>
-                </div>
-            </div>
-            <div class="info-card">
-                <div class="week-day">
-                    What's today: <span id="dayOfWeek"></span>
-                </div>
-                <div class="utc-milliseconds-time">
-                    UTC Time In Milleseconds: <span id="secondsUTC"></span>
-                </div>
-                <div>Track: Frontend</div>
-            </div>
-            <div class="footer-card">
-                <div class="code-descrption">The Github link to this profile card</div>
-                <a href="https://github.com/Ahmadbuba/HNG_profile_card" target="_blank">
-                    <img src="./assets/images/github_icon.png" alt="code link">
-                </a>
+    <div class="container">
+
+        <div class="profile-card">
+            <img src="https://images.unsplash.com/photo-1447877085163-3cce903855cd?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925" alt="background_image" height="150">
+        </div>
+
+        <div class="profile-info">
+            <img class="profile-pic" src="./assets/images/slack_displayName.jpg" alt="slack_profile_pic" height="60">
+            <div class="flex-center">
+                
+                    <span>Slack Username:</span>
+                
+                    <h2>ahmad</h2>
+                  
             </div>
         </div>
+
+        <hr class="line">
+
+        <div class="profile-info-body">
+
+            <div class="info">
+               
+                    <span>What's today</span>
+                
+                
+                    <h2 id="dayOfWeek"></h2>
+                
+            </div>
+
+            <div class="info">
+                
+                    <span>Current Time(MilliSeconds UTC)</span>
+                
+                    <h2 id="secondsUTC"></h2>
+                
+            </div>
+
+            <div class="info">
+                
+                    <span>Track</span>
+                
+                    <h2>Frontend</h2>
+                
+            </div>
+
+            <div class="flex-center link">
+                <span>Code Link:</span>
+            </div>
+
+            <div class="flex-center link">
+                <a href="" target="_blank">
+                    <img src="./assets/images/github_icon.png" alt="immag">
+                </a>
+            </div>
+
+        </div>
+
     </div>
+
     <script src="./js/script.js"></script>
 </body>
 </html>
